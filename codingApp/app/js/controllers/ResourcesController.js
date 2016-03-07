@@ -2,7 +2,6 @@ app.controller('ResourcesController', ['$scope', '$routeParams', 'MyService', fu
   resources = $routeParams.resource;
 
     MyService.getter(resources).then(function (data) {
-
-      $scope.resources = data
+      $scope.resources = data.data
     })
 }])
