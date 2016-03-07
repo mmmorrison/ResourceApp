@@ -1,8 +1,9 @@
 <div class="container">
   <div class="row">
     <div ng-repeat='resource in resources | orderBy:"name"'>
-    <a href="{{resource.website}}"><h3>{{resource.name}}</h3></a>
+    <h3>{{resource.name}}</h3>
     <p>{{resource.description}}</p>
+    <p>{{resource.website}}</p>
     </div>
   </div>
 </div>
