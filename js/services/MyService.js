@@ -11,8 +11,8 @@ app.service("MyService", function($http){
     },
 
     getOne: function(id) {
-      return $http.get('https://apiandapp.herokuapp.com/resource'+id)
+      return $http.get('https://apiandapp.herokuapp.com/'+id)
     }
-    
+
   }
 });
