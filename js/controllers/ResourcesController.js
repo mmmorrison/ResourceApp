@@ -3,5 +3,6 @@ app.controller('ResourcesController', ['$scope', '$routeParams', 'MyService', fu
 
     MyService.getter(resources).then(function (data) {
       $scope.resources = data.data
+      console.log(data.data);
     })
 }])
