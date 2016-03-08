@@ -3,7 +3,7 @@ app.controller("ShowController", function($scope, MyService, $routeParams){
 
     MyService.getOne(id).then(function(payload){
       $scope.resource = payload.data[0]
-      console.log(payload.data[0]);
+      console.log(payload.data);
     }, function(error){
       console.log("an error occurred");
     });
