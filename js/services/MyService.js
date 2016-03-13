@@ -12,7 +12,7 @@ app.service("MyService", function($http){
 
     getOne: function(id) {
       return $http.get('https://apiandapp.herokuapp.com/'+id)
-    }
+    },
 
     getComments: function(id) {
       return $http.get('https://apiandapp.herokuapp.com/test' +id)
