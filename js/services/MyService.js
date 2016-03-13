@@ -14,5 +14,9 @@ app.service("MyService", function($http){
       return $http.get('https://apiandapp.herokuapp.com/'+id)
     }
 
+    getComments: function(id) {
+      return $http.get('https://apiandapp.herokuapp.com/test' +id)
+    }
+
   }
 });
