@@ -3,6 +3,6 @@
     <p>{{resource.name}}</p>
     <p>{{resource.description}}</p>
     <p><a href="{{resource.website}}">{{resource.website}}</a></p>
-    <p>{{resource}}</p>
+    <p ng-repeat='comment in resource'>{{resource.comments}}</p>
   </div>
 </div>
