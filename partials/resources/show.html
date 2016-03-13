@@ -6,8 +6,7 @@
     <div class='jumbotron' ng-repeat='comment in resource.comments'>
       <p>{{comment.author}}</p>
       <p>{{comment.review}}</p>
-      <p>{{comment.stars}}</p>
+      <p class='glyphicon glyphicon-star'>{{comment.stars}}</p>
     </div>
 
-
-    <!-- ng-repeat='comment in post.comments -->
+<span ng-click ='post.votes=post.votes+1' ng-class="{green: post.votes > 5}" class='glyphicon glyphicon-chevron-up'></span>
