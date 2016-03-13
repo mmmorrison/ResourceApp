@@ -3,10 +3,11 @@
     <p>{{resource.name}}</p>
     <p>{{resource.description}}</p>
     <p><a href="{{resource.website}}">{{resource.website}}</a></p>
-    <p ng-repeat='comment in resource.comments'>{{comment.author}}</p>
-    <p>***********{{comment.author}}8**********</p>
-  </div>
-</div>
+    <div class='jumbotron' ng-repeat='comment in resource.comments'>
+      <p>{{comment.author}}</p>
+      <p>{{comment.review}}</p>
+      <p>{{comment.stars}}</p>
+    </div>
 
 
-<!-- ng-repeat='comment in post.comments -->
+    <!-- ng-repeat='comment in post.comments -->
